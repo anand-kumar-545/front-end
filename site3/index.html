@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>Anand</title>
+  
 <style>
 html {
   height: 100%;
@@ -185,22 +188,22 @@ body {
       <input type="password" name="pswrd" required="">
       <label>Password</label>
     </div>
-    <a>
+    <a target='_blank'>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      <input type="button" onclick="check(this.form)" value="SUBMIT"/>
+      <input type="button" target='_blank' onclick="check(this.form)" value="SUBMIT"/>
     </a>
   </form>
   <script language="javascript">
             function check(form) { /*function to check userid & password*/
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.userid.value == "anand" && form.pswrd.value == "ramya") {
-                    window.open('https://anand-kumar-545.github.io/front-end/site/')/*opens the target page while Id & password matches*/
+                    window.open('https://anand-kumar-545.github.io/front-end/site/')
                 }
                 else {
-                    alert("cheppina password kotu aa ramya !")/*displays error message*/
+                    alert("Wrong password please re-enter !")/*displays error message*/
                 }
             }
         </script>
